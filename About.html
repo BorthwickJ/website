@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Use this section for your webpage metadata - more detail https://www.w3schools.com/html/html_head.asp -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+    <link rel="stylesheet" href="css/test.css">
+
+
+
+
+    
+</head>
+
+<body class="hero-2">
+
+	<!-- begin the main section of the homepage -->
+	
+
+        
+    <nav class="navbar">
+        <div class="logo">
+        <a href="HomePage.html"><img src="images/GoogleTitle.png" height="70" width="370" alt="Google Logo"></a>
+    </div>
+        <button class="menu-toggle">&#9776;</button>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="HomePage.html">Home</a></li>
+            <li class="nav-item"><a href="About.html">About</a></li>
+            <li class="nav-item"><a href="Rise%20of%20Google.html">Rise of Google</a></li>
+            <li class="nav-item"><a href="Privacy.html">Privacy Issues</a></li>
+            <li class="nav-item"><a href="#">Supression of Innovation</a></li>
+        </ul>
+    </nav>
+        
+   <section class="hero">
+       
+           <h1>About</h1>
+      
+    <p>Scroll down to learn about the purpose of this website</p>
+       
+      
+     <div class="scroll-arrow" id="scrollArrow">
+    &#x2193; <!-- Downward Arrow Character -->
+  </div>
+                        
+                    
+    
+       
+    </section>
+
+    <div class="content-row">
+  <div class="text-section">
+  
+      <p>The aim of this website is to explore the rise of Google from a simple search engine to a dominant force in the online world.By highlighting potential data privacy issues,and the supression of innovation from smaller companies, this website aims to educate and inform of Google and the power they hold.</p>
+
+  </div>
+  <div class="image-section">
+    <img src="images/web%20icon.png" alt="Image 1" class="small-image">
+  </div>
+</div>
+       
+   
+  
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector(".nav-list");
+
+    menuToggle.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
+});
+       
+       // Scroll functionality to the next section
+document.getElementById('scrollArrow').addEventListener('click', function() {
+  window.scrollTo({
+    top: window.innerHeight, // Scroll to the next section
+    behavior: 'smooth' // Smooth scrolling
+  });
+});
+
+    </script>   
+</body>
+</html>

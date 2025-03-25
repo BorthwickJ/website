@@ -1,0 +1,381 @@
+body{
+	color:#023047;
+	margin: 0;
+	
+}
+
+.topherosectionpage{
+	background-color:#023047;
+	padding:10px;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #023047;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+	position: relative;
+	top: 25%; 
+	width: 100%; 
+	text-align: center; 
+	margin-top: 30px; 
+  font-family: "Oswald", sans-serif; 
+	font-weight: 400;
+}
+ .navbarmenu h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+ font-family: "Oswald", sans-serif;  color: white;
+}
+.navbarmenu a{ 
+  text-decoration:none;
+}
+.navbarmenu img{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  position: relative;
+ font-family: "Oswald", sans-serif;  
+ color: #023047;
+ right: -2rem; 
+bottom: -2rem;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover{
+  color: #219ebc;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.text-yellow{
+ color:#FB8500;
+}
+.herosection {
+  color: #023047;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 0 auto 2rem; 
+  padding: 5rem ;
+  color: #023047;
+ font-family: "Oswald", sans-serif;  padding-left: 4rem; 
+  margin:50px;
+
+}
+.herosection img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.herosection h1 {
+  font-size: 3rem; 
+   font-family: "Oswald", sans-serif; 
+}
+.herosection img, .herosection h1 {
+  flex: 1;
+}
+
+@media screen and (min-width:1000px) {
+.herosectiontext {
+  order: 1;
+}
+
+.coverimg {
+  order: 2; 
+}
+}
+
+@media screen and (max-width: 600px) {
+  .herosection {
+    padding: 3rem 1rem; 
+  }
+}
+@media screen and (max-width:1000px) {
+  .herosection {
+    flex-direction: column;
+    padding: 0;
+	text-align:Center;
+	content-align: center;
+  }
+
+  quizbutton {
+    padding: 100px;
+	font-size: 3rem;
+	text-align:Center;
+	content-align: center;
+	margin-bottom:40px;
+  }
+
+}
+
+
+a.quizbutton {
+  border: 2px solid #023047;
+  color: #023047;
+  background-color: #CFE2EB; 
+  text-align: center;
+  font-size: 20px;
+  padding: 22px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 2px 4px #023047;
+  font-weight: bold; 
+  text-decoration: none;
+  border: 0; 
+  width: fit-content; 
+  align-items:center;
+  font-family: "Montserrat", sans-serif;  
+}
+
+a.quizbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+a.quizbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+a.quizbutton:hover span {
+  padding-right: 25px;
+}
+
+a.quizbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.factcards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+}
+.factcard {
+  width: 320px; 
+  height: 300px; 
+  margin: 10px; 
+  padding: 20px; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-color:#CFE2EB;
+  box-shadow: 5px 10px #023047;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;  
+  font-weight: 400;	
+  margin-top: 12px;
+  color:#023047;
+  text-align:center;
+}
+
+.factnumber{
+	font-size:50px;
+}
+
+.factcard span{
+	font-weight: bold;
+}
+
+
+.explore{
+  font-family: "Oswald", sans-serif;	text-align: center;
+	margin-top: 70px;
+	  color:#023047;
+	font-size:2rem;
+}
+
+
+.content-block {
+  color: #023047;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 0 auto 2rem; 
+  font-family: "Montserrat", sans-serif;  
+  font-weight: 400;
+  max-width: 70rem; 
+  font-size:20px;
+}
+.text span {
+    font-weight: bold;
+}
+
+.text h2 {
+ font-family: "Oswald", sans-serif;}
+.picture img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.picture, .text {
+  flex: 1;
+}
+
+.morebutton { 
+box-shadow: 2.5px 5px #023047;
+border-color:#023047;
+  border-style: solid;
+  border-width: medium; 
+  box-sizing: border-box; 
+ font-size: 1.4rem; 
+ opacity: 1; 
+ outline: 0 solid transparent; 
+ padding: 8px 18px; 
+ width: fit-content; 
+  font-family: "Oswald", sans-serif;
+ font-weight: bold; 
+ background-color:white;
+}
+.morebutton:hover, .morebutton:focus {
+  background-color: #81B8D1;
+}
+.morebutton a{
+  text-decoration: none;
+  color: #023047; 
+}
+@media screen and (min-width:1000px){
+.content-block{
+	flex: 1 1 auto; 
+  max-width: calc(70% - 5rem); 
+}
+.content-block:nth-child(odd) .picture {
+  order: 1;
+}
+
+.content-block:nth-child(odd) .text {
+  order: 2; 
+  padding-left: 4rem; 
+}
+
+.content-block:nth-child(even) {
+  flex-direction: row-reverse; 
+}
+
+.content-block:nth-child(even) .text {
+  padding-right: 4rem; 
+}
+}
+@media screen and (max-width:1000px) {
+  .content-block {
+    flex-direction: column;
+    padding: 0;
+	width: 85%;
+	font-align:center;
+  }
+
+  .content-block .picture, 
+  .content-block .text {
+    order: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .content-block .picture {
+    margin-bottom: 1rem;
+  }
+
+  .content-block .text {
+    width: 90%;
+    padding: 0 1rem;
+  }
+  .content-block h2{
+	font-size: 2 rem;
+}
+ .content-block h2{
+	font-size: 1.5 rem;
+}
+  .morebutton {
+    padding: 1.75rem;
+	font-size: 1.5rem;
+	text-align:Center;
+	content-align: center;
+  }
+}
+
+.scroll-top {
+  position: fixed; 
+  bottom: 3rem; 
+  right: 2rem; 
+  display: block;
+}
+
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #023047;
+  color: white;
+  font-size: 1.5rem;
+  font-weight:500;
+  font-family: "Oswald", sans-serif; 
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+
+footer a:hover{
+	  background-color: #0E4C5F;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 20px; 
+  }
+
+  footer a {
+    font-size: 1.5rem; 
+  }
+}
+
+}

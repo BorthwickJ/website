@@ -1,0 +1,552 @@
+
+
+
+
+
+* Main container to center content */
+.main-container {
+  max-width: 1200px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Optional padding */
+}
+
+/* Ensure the navbar, hero, and other sections use the main container */
+.navbar .container-center,
+.hero .container-center,
+.content-row {
+  max-width: 1200px; /* Ensure consistency */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Optional padding */
+}
+
+
+
+
+
+body {
+   background: linear-gradient(135deg, #063970, #042c5c);
+    color: white;
+    
+    
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    max-width: 2000px;
+    padding: 1em 1em 2em;
+    align-content: center;
+}
+
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.container {
+  display: flex;
+}
+
+.container img,
+.container video {
+  width: 33.33%;
+}
+.link {
+    width: 52%;
+    float: left;
+    text-align: center;
+}
+
+h1 {
+  color:  white;
+}
+
+h2 {
+  color:  white;
+}
+h3 {
+  color:  #027148;
+}
+
+
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px #cfd8dc;
+z-index: 2;
+}
+
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 2rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    transition: all 200ms ease-in;
+    font-size: 18px;
+}
+
+.nav-item a:hover {
+    color: #FE1D37;
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px; /* Adjust so it's always visible */
+    right: 15px;
+    z-index: 4; /* Ensure it's above the dropdown */
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show menu button */
+       top: 40px;
+    }
+
+    .nav-list {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        background: white;
+        box-shadow: 0px 2px 6px rgba(207, 216, 220, 0.5);
+        width: 200px;
+        border-radius: 5px;
+        z-index: 3;
+    }
+
+    .nav-list.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-item {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-item a {
+        font-size: 16px;
+    }
+}
+
+
+
+
+.logo img {
+    height: 50px; 
+    width: auto; 
+}
+
+
+
+.flex-container {
+  display: flex;
+justify-content: center; 
+height:200px;
+
+flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.flex-container > div {
+    flex-basis: 220px;
+    height: 120px;
+    background: white;
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flex-container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.footer {
+    background: linear-gradient(to right, #042c5c, #063970);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+/* Default Hero Styles */
+.hero {
+  min-height: 90vh; /* Ensure all hero sections are at least 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: for parallax effect */
+  color: white;
+  position: relative;
+}
+.hero .container-center {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+/* Add a dark overlay to improve text visibility */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 0; /* Ensure the overlay is behind the text and button */
+}
+
+
+
+
+
+/* Ensure the text sits above the overlay */
+.hero h1 {
+  z-index: 1; /* Make sure text is above the overlay */
+  position: relative; /* Ensure it's on top of the overlay */
+  margin-bottom: 20px; /* Add space below the heading */
+color:white;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+/* Button Styles */
+.hero button {
+  z-index: 2; /* Ensure button is above the overlay */
+  position: relative; /* To be sure it sits above the overlay */
+  padding: 10px 20px;
+  background-color: #FE1D37; /* Button color */
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+margin-top: 20px;
+}
+.hero p{
+   color:white;
+    font-size:1.8rem;
+    margin: 10px 0;
+    z-index: 1;
+    position: relative;
+    
+}
+
+.hero button:hover {
+  background-color: #e65b50; /* Button hover effect */
+}
+
+
+
+
+      
+
+  
+
+
+
+
+/* HERO SECTION */
+.hero-2 .hero {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("Hero_2.png");
+  position: relative;
+}
+
+/* Ensure text stays visible */
+.hero-2 h1, .hero-2 h2 .hero-2 p{
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+/* BOX BELOW HERO */
+
+
+
+.hero-4 h1, .hero-4 h2 .hero-4 p{
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+
+
+.hero-1 .hero {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://www.pcworld.com/wp-content/uploads/2023/08/shutterstock_370595594.jpg?quality=50&strip=all");
+  position: relative;
+}
+
+
+
+.hero-3 .hero {
+  min-height: 90vh; /* Ensures the hero section is at least 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("Hero%202.png");
+  position: relative;
+  padding: 0 20px; /* Optional padding to avoid text touching edges */
+}
+
+
+.hero-4 .hero {
+    
+    min-height: 90vh; /* Ensures the hero section is at least 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("Hero_4.png");
+  position: relative;
+  padding: 0 20px; 
+    
+}
+
+
+
+
+h1 {
+      font-size: 3vw; /* Responsive size based on viewport width */
+      margin: 0;
+      color: white;
+      font-weight: bold;
+      
+    }
+
+ 
+   h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 20px auto;  /* Centers text with proper spacing */
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+    text-align: center; /* Centers the text */
+    /* Better visibility */
+    max-width: 50%; /* Adjusts width for better readability */
+    line-height: 1.6; /* Makes text easier to read */
+    white-space: normal; /* Ensures text wraps properly */
+}
+ 
+
+
+
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 5vw;
+      }
+
+      h2 {
+        font-size: 4vw;
+         max-width: 80%; 
+        padding: 5px; 
+             
+      }
+    }
+
+
+/* Hero section */
+
+.content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  flex-wrap: wrap; /* Allow wrapping of items when screen is smaller */
+  gap: 20px; /* Add gap between the items */
+}
+
+/* Reverse the content in the second row */
+.content-row.reverse {
+  flex-direction: row-reverse; /* This reverses the order of text and image */
+}
+
+/* Style for text section */
+.text-section {
+  flex-basis: 45%; /* Takes up about 45% of the row */
+  padding: 20px;
+}
+
+.text-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  flex-wrap: wrap; /* Allow wrapping when screen is small */
+  gap: 20px; /* Space between elements */
+}
+
+/* Reverse layout for alternating sections */
+.content-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Style for text section */
+.text-section {
+  flex: 1; /* Allow flexible resizing */
+  min-width: 45%; /* Prevent text from getting too narrow */
+  padding: 20px;
+}
+
+/* Style for image section */
+.image-section {
+  flex: 1; /* Allow flexible resizing */
+  min-width: 45%; /* Prevent image from getting too small */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image Styling */
+.image-section img {
+  width: 100%; /* Make image fill its container */
+  max-width: 500px; /* Prevent it from getting too large */
+  height: auto;
+  object-fit: contain; /* Prevent stretching */
+  border-radius: 8px; /* Optional styling */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .content-row {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+  }
+
+  .text-section,
+  .image-section {
+    flex-basis: 100%; /* Ensure both sections take full width */
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .image-section img {
+    width: 100%; /* Ensure it scales properly */
+    max-width: 350px; /* Keep image at a good size */
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+/* Scroll arrow */
+.scroll-arrow {
+  position: absolute;
+  bottom: 40px; /* Adjust the value to move it higher or lower */
+  font-size: 3rem; /* Increase the font size to make the arrow bigger */
+  color: white; /* Color of the arrow */
+  cursor: pointer;
+  animation: bounce 1.8s infinite; /* Optional bounce animation */
+}
+
+.scroll-arrow:hover {
+  color: #ff6f61; /* Change color on hover */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

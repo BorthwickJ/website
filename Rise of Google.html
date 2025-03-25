@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Use this section for your webpage metadata - more detail https://www.w3schools.com/html/html_head.asp -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+    <link rel="stylesheet" href="css/test.css">
+
+
+
+
+    
+</head>
+
+<body class="hero-3">
+
+	
+
+        
+   <nav class="navbar">
+   
+    <button class="menu-toggle">&#9776;</button> <!-- Hamburger Menu for Mobile -->
+    <ul class="nav-list">
+        <li class="nav-item"><a href="HomePage.html">Home</a></li>
+        <li class="nav-item"><a href="About.html">About</a></li>
+        <li class="nav-item"><a href="Rise of Google.html">Rise of Google</a></li>
+        <li class="nav-item"><a href="Privacy.html">Privacy Issues</a></li>
+        <li class="nav-item"><a href="#">Suppression of Innovation</a></li>
+    </ul>
+</nav>
+
+        
+   <section class="hero">
+       
+           <h1>Rise of Google</h1>
+       <p>Scroll down to learn a brief history of Google</p>
+   
+    
+        <div class="scroll-arrow" id="scrollArrow">
+    &#x2193; <!-- Downward Arrow Character -->
+  </div>
+    
+    </section>
+   
+	
+    <div class="content-row">
+  <div class="text-section">
+  
+    <p>
+        The story of Google started in 1998 when friends Sergey Brin and Larry Page created a search engine that used links to determine the importance of webpages. Shortly after the formation of the company in 1999, Google moved its operations to Mountain View in California, where the headquarters is still situated today.</p><p> By 2001 Google was able to store <b>1 billion URL’s</b>, becoming one of the key search engines. Throughout the early 2000’s Google acquired many companies signalling their intent such as YouTube in 2006 and Keyhole inc. in 2004. In 2018 Google celebrated its 20th anniversary and has grown massively since then. Picture is a graph by Statista showcasing the growth in revenue of the Google company. <p>As of 2025, Google is the most used search engine, with their market share of the search engine market being <b>91.62%</b>. On average, there are over <b>3.5 billion</b> searches processed by Google every single day, with an estimated <b>1.2 trillion </b> searches every year.
+      Within just the United States Google records <b>277 million</b> monthly unique visitors.<b>79% of people use Google daily</b> Thats alot of power for just one company </p> 
+
+  </div>
+  <div class="image-section">
+    <img src="images/graph.png" alt="Image 1" />
+  </div>
+</div>
+
+<div class="content-row reverse">
+  <div class="text-section">
+   
+      <p> In recent times, Google have further expanded their company introducing a wider range of products and services to their roster. One of the more known parts of the Google brand is their operating system Android. Android is an operating system designed for Mobile that was released in 2007. Android has brought Google major success, with around <b>75% of mobile devices</b> running on Android as of 2020.  </p>
+      <p>Another major section of the Google ecosystem is Gmail. Similarly to Android, Gmail was launched in 2007. Initially, Google were seen as an innovator within the email industry particularly with data security. In 2007 Google acquired Postini, which was an email security firm, for a massive fee of <b>$625 million</b> to improve the security of Gmail for users. </p>
+      <p>The final main service owned by Google is Google Maps. This service allows users to get directions, restaurant and shop recommendations, and look all around the world. The service was a major success for Google, with an estimated <b>1 billion monthly users as of 2019.</b></p>
+  </div>
+  <div class="image-section">
+    <img src="images/search.jpg" alt="Image 2" />
+  </div>
+</div>
+    
+    
+   
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector(".nav-list");
+
+    menuToggle.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
+});
+     
+       
+       
+       // Scroll functionality to the next section
+document.getElementById('scrollArrow').addEventListener('click', function() {
+  window.scrollTo({
+    top: window.innerHeight, // Scroll to the next section
+    behavior: 'smooth' // Smooth scrolling
+  });
+});
+
+       
+       
+       
+       // Scroll functionality to the next section
+document.getElementById('scrollArrow').addEventListener('click', function() {
+  window.scrollTo({
+    top: window.innerHeight, // Scroll to the next section
+    behavior: 'smooth' // Smooth scrolling
+  });
+});
+    </script>   
+</body>
+</html>

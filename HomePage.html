@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Use this section for your webpage metadata - more detail https://www.w3schools.com/html/html_head.asp -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+    <link rel="stylesheet" href="css/test.css">
+
+
+
+
+    
+</head>
+
+<body class="hero-1">
+
+	<!-- begin the main section of the homepage -->
+	
+
+
+    <nav class="navbar">
+ 
+        
+       
+        <button class="menu-toggle">&#9776;</button>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="HomePage.html">Home</a></li>
+            <li class="nav-item"><a href="About.html">About</a></li>
+            <li class="nav-item"><a href="Rise%20of%20Google.html">Rise of Google</a></li>
+            <li class="nav-item"><a href="Privacy.html">Privacy Issues</a></li>
+            <li class="nav-item"><a href="#">Suppression of Innovation</a></li>
+        </ul>
+        </div>
+            </nav>
+        
+            <section class="hero" style="background-image: url('https://www.pcworld.com/wp-content/uploads/2023/08/shutterstock_370595594.jpg?quality=50&strip=all');">
+        
+           
+       
+        
+    <h1>Google - Too Powerful?</h1>
+    <p>Your data today, someone else's tomorrow</p>
+    <button onclick="window.location.href='about.html' ;">Discover more</button>
+       </div>
+           
+           </section>
+       
+       
+           <div class="content-row">
+            <div class="post-it">
+              <h2>Note 1</h2>
+              <p>This is the first post-it note.</p>
+            </div>
+            <div class="post-it">
+              <h2>Note 2</h2>
+              <p>This is the second post-it note.</p>
+            </div>
+            <div class="post-it">
+              <h2>Note 3</h2>
+              <p>This is the third post-it note.</p>
+            </div>
+          </div>
+    
+    
+    
+    
+   <script>
+       document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navList = document.querySelector(".nav-list");
+      menuToggle.addEventListener("click", function () {
+        navList.classList.toggle("active");
+      });
+
+      // Scroll functionality to the next section
+      document.getElementById('scrollArrow').addEventListener('click', function() {
+        window.scrollTo({
+          top: window.innerHeight, // Scroll to the next section
+          behavior: 'smooth' // Smooth scrolling
+        });
+      });
+    });
+
+
+
+
+    </script>   
+</body>
+</html>
